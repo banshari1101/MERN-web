@@ -1,0 +1,73 @@
+.container {
+    max-width: 140rem;
+    padding: 4.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    gap: 3.2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    position: relative;
+    padding-bottom: 0.5rem; 
+}
+
+li a {
+    text-decoration: none; 
+    transition: color 0.3s ease-in-out; 
+}
+
+li:hover a {
+    color: white; 
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #646cff;
+    transition: width 0.3s ease-in-out; 
+}
+
+li:hover::after {
+    width: 90%; 
+}
+
+.logo-brand {
+    position: relative; 
+    padding-bottom: 0.5rem; 
+}
+
+.logo-brand a {
+    text-decoration: none;
+    font-size: 2rem; 
+    transition: color 0.3s ease-in-out;
+}
+
+.logo-brand:hover a {
+    color: white; 
+}
+
+.logo-brand::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #646cff;
+    transition: width 0.3s ease-in-out;
+}
+
+.logo-brand:hover::after {
+    width: 90%; 
+}
